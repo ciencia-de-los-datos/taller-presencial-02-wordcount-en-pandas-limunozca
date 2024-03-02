@@ -72,7 +72,7 @@ def save_output(dataframe, output_filename):
 
 def run(input_directory, output_filename):
     """Call all functions."""
-    df = load_input("input")
+    df = load_input(input_directory)
     df = clean_text(df)
     df = count_words(df)
     save_output(df, output_filename)
